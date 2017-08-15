@@ -61,7 +61,7 @@ header 	.flex{
 h1{
 	font-weight: bold;
 	padding: 1.5rem 5rem; 
-	line-height: 1.2;
+	line-height: 2.4rem;
 	font-size: 2rem;
 }
 .features{
@@ -80,7 +80,7 @@ h1{
 .service img{
 	width: 5rem;
 }
-.service img.paper-icon{
+.paper-icon{
 	width: 3.5rem;
 	
 }
@@ -166,11 +166,57 @@ footer img{
 		width: 100%;
 		margin-top: 9rem;
 		margin-right: 0;
+		padding: 0 0;
 		
 	}
 	.main-banner h1{
 		font-size: 1rem;
 		text-align: center;
-		padding: 1rem auto;
+		padding: .5rem 0;
+	}
+	section.features{
+		flex-direction: column;
+		align-items: center;
+		margin: 2.23rem auto;
+	}
+	.service{
+		margin: 1.54rem auto;
+	}
+	.info{
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		margin: auto 0;
+		padding: auto 0;
+		width: 100%;
+		
+	}
+	.service img{
+		margin-top: 1.54rem;
+	}
+	.service p{
+		font-size: .77rem;
+	}
+	section.features.container{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.title{
+		display: flex;
+		align-content: center;
+		justify-content: center;
+		width: 100%;
+	}
+	p {
+		margin: 1rem 0	;
+		font-size: .77rem;
+		margin-bottom: 4rem;
+	}
+	.copyright{
+		display: none;
+	}
+	footer img{
+		margin: 0 auto;
 	}
 }
