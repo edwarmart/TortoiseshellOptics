@@ -46,9 +46,7 @@ ul li{
 	display: inline;
 	padding: 0 1rem;
 }
-.truncated-menu{
-	display: none;
-}
+
 header 	.flex{
 	justify-content: flex-end;
 }
@@ -120,8 +118,16 @@ footer img{
 	margin-right: 1rem;
 	margin-left: 2rem;
 }
+@media only screen and (min-width: 1025px){
+	.truncated-menu{
+		display: none;
+	}
+}
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1024px) and (min-width: 769px){
+	.truncated-menu{
+		display: none;
+	}
 	.container{
 		width: 100%;
 	}
@@ -143,5 +149,28 @@ footer img{
 		}
 }
 @media only screen and (max-width: 768px){
-	
+	header{
+		padding-top: 0px;
+	}
+	.normal-menu{
+		display:none;
+	}
+	nav span{
+		display: none;
+	}
+	header{
+		height: 17rem;
+		background-position: 20%;
+	}
+	.main-banner{
+		width: 100%;
+		margin-top: 9rem;
+		margin-right: 0;
+		
+	}
+	.main-banner h1{
+		font-size: 1rem;
+		text-align: center;
+		padding: 1rem auto;
+	}
 }
